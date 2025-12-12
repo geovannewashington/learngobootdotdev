@@ -3,17 +3,15 @@ package main
 import "fmt"
 
 func (e email) cost() int {	
-	var price int
-	price = 2 * len(e.body) // default subscribed
-	if !e.isSubscribed {
-		// not subscribed
-		price = 5 * len(e.body)	
+	price := 2           // Default subscribed
+	if !e.isSubscribed { // Not subscribed
+		price = 5	
 	}
-	return price
+	return price * len(e.body)
 }
 
 func (e email) format() string {
-	var msg string = "Not Subscribed"
+	msg := "Not Subscribed"
 
 	if e.isSubscribed {
 		msg = "Subscribed"
