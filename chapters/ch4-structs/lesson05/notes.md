@@ -21,7 +21,7 @@ type truck struct {
 }
 ```
 
-Unlilke nestes structs, am embedded struct's fields are accessable at the top level like normal fields.
+Unlilke nested structs, am embedded struct's fields are accessable at the top level like normal fields.
 
 Example:
 

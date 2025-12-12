@@ -36,8 +36,8 @@ myCar := struct {
   brand string
   model string
 } {
-  brand: "Toyota",
   model: "Camry",
+  brand: "Toyota",
 }
 ```
 
